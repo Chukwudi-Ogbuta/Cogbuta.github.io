@@ -47,41 +47,43 @@
 			    color: white !important;
 			}
 
-			/* Skills section */
-			article#work.wrapper.style2 {
-			    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-			}
-			
-			article#work h2,
-			article#work h3,
-			article#work p,
-			article#work li {
-			    color: white !important;
-			}
-			
-			/* Data Engineering Portfolio section */
-			article#portfolio.wrapper.style3 {
-			    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%) !important;
-			}
-			
-			article#portfolio h2,
-			article#portfolio h3,
-			article#portfolio p,
-			article#portfolio a {
-			    color: white !important;
-			}
-			
-			/* Economics Projects section */
+			/* Pink gradient for all sections */
+			article#work.wrapper.style2,
+			article#portfolio.wrapper.style3,
 			article#economics.wrapper.style3 {
 			    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
 			}
 			
-			article#economics h2,
-			article#economics h3,
-			article#economics p,
-			article#economics a {
+			/* Section headers white */
+			article#work h2,
+			article#portfolio h2,
+			article#economics h2 {
 			    color: white !important;
 			}
+			
+			/* Keep cards with white/light background */
+			article.box.style2 {
+			    background: white !important;
+			    border-radius: 10px !important;
+			    padding: 20px !important;
+			}
+			
+			/* Card text stays dark for readability */
+			article.box.style2 h3,
+			article.box.style2 p,
+			article.box.style2 a {
+			    color: #333 !important;
+			}
+			
+			/* Card links */
+			article.box.style2 h3 a {
+			    color: #f5576c !important;
+			}
+			
+			article.box.style2 h3 a:hover {
+			    color: #f093fb !important;
+			}
+
 		</style>
 	</head>
 	<body class="is-preload">
@@ -304,6 +306,7 @@
 
 	</body>
 </html>
+
 
 
 
