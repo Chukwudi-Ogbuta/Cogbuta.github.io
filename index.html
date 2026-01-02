@@ -214,6 +214,26 @@
 			#economics .row {
 			    background: transparent !important;
 			}
+
+			/* Constrain images within card boundaries */
+			#portfolio .box.style2,
+			#economics .box.style2 {
+			    overflow: hidden !important;
+			}
+			
+			#portfolio .image.featured,
+			#economics .image.featured {
+			    width: 100% !important;
+			    max-width: 100% !important;
+			    margin: 0 !important;
+			    padding: 0 !important;
+			}
+			
+			#portfolio .image.featured img,
+			#economics .image.featured img {
+			    max-width: 100% !important;
+			    width: 100% !important;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -430,6 +450,7 @@
 
 	</body>
 </html>
+
 
 
 
