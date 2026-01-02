@@ -2494,3 +2494,34 @@ input, select, textarea {
     box-shadow: 0 8px 25px rgba(245, 87, 108, 0.4) !important;
     background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%) !important;
 }
+
+/* ===== MODERN NAVIGATION BAR ===== */
+#nav {
+    background: rgba(30, 30, 40, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+#nav ul li a {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+    font-size: 13px !important;
+    padding: 12px 20px !important;
+    transition: all 0.3s ease !important;
+    border-radius: 6px !important;
+    margin: 0 4px !important;
+}
+
+#nav ul li a:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4) !important;
+}
+
+#nav ul li a.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+}
