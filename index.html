@@ -28,6 +28,69 @@
 		        box-shadow: none !important;
 		        border: none !important;
 		    }
+
+			/* Certifications Carousel */
+			.cert-carousel-container {
+			    position: relative;
+			    max-width: 800px;
+			    margin: 0 auto;
+			    padding: 20px 60px;
+			}
+			
+			.cert-carousel {
+			    display: flex;
+			    overflow-x: auto;
+			    scroll-behavior: smooth;
+			    gap: 20px;
+			    scrollbar-width: none;
+			}
+			
+			.cert-carousel::-webkit-scrollbar {
+			    display: none;
+			}
+			
+			.cert-item {
+			    min-width: 300px;
+			    flex-shrink: 0;
+			    text-align: center;
+			}
+			
+			.cert-item img {
+			    width: 100%;
+			    border-radius: 10px;
+			    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+			}
+			
+			.cert-item h3 {
+			    margin-top: 15px;
+			    font-size: 16px;
+			}
+			
+			.carousel-btn {
+			    position: absolute;
+			    top: 50%;
+			    transform: translateY(-50%);
+			    background: rgba(102, 126, 234, 0.9);
+			    color: white;
+			    border: none;
+			    font-size: 40px;
+			    padding: 10px 20px;
+			    cursor: pointer;
+			    border-radius: 50%;
+			    z-index: 10;
+			}
+			
+			.carousel-btn:hover {
+			    background: rgba(102, 126, 234, 1);
+			}
+			
+			.carousel-btn.prev {
+			    left: 0;
+			}
+			
+			.carousel-btn.next {
+			    right: 0;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -145,23 +208,25 @@
             </div>
         </div>
         <div class="row">
-		    <div class="col-4 col-6-medium col-12-small">
-		        <article class="box style2">
-		            <a href="#" class="image featured"><img src="images/ibmde.jpg" alt="" /></a>
-		            <h3>IBM Data Engineering</h3>
-		        </article>
-		    </div>
-		    <div class="col-4 col-6-medium col-12-small">
-		        <article class="box style2">
-		            <a href="#" class="image featured"><img src="images/ibmda.jpg" alt="" /></a>
-		            <h3>IBM Data Analytics</h3>
-		        </article>
-		    </div>
-		    <div class="col-4 col-6-medium col-12-small">
-		        <article class="box style2">
-		            <a href="#" class="image featured"><img src="images/google.jpg" alt="" /></a>
-		            <h3>Google Data Analytics</h3>
-		        </article>
+		    <div class="col-12">
+		        <div class="cert-carousel-container">
+		            <button class="carousel-btn prev" onclick="scrollCerts(-1)">‹</button>
+		            <div class="cert-carousel">
+		                <div class="cert-item">
+		                    <img src="images/ibmde.jpg" alt="IBM Data Engineering" />
+		                    <h3>IBM Data Engineering</h3>
+		                </div>
+		                <div class="cert-item">
+		                    <img src="images/ibmda.jpg" alt="IBM Data Analytics" />
+		                    <h3>IBM Data Analytics</h3>
+		                </div>
+		                <div class="cert-item">
+		                    <img src="images/google.jpg" alt="Google Data Analytics" />
+		                    <h3>Google Data Analytics</h3>
+		                </div>
+		            </div>
+		            <button class="carousel-btn next" onclick="scrollCerts(1)">›</button>
+		        </div>
 		    </div>
 		</div>
         </div>
@@ -247,9 +312,17 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		<script>
+		function scrollCerts(direction) {
+		    const carousel = document.querySelector('.cert-carousel');
+		    const scrollAmount = 320;
+		    carousel.scrollLeft += direction * scrollAmount;
+		}
+		</script>
 
 	</body>
 </html>
+
 
 
 
