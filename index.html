@@ -11,42 +11,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-		    /* Remove ALL existing hover effects first */
-		    nav#nav ul.container li a:hover {
-		        background: none !important;
+		    /* Remove default hover effects */
+		    #nav a:hover {
+		        background: transparent !important;
 		        box-shadow: none !important;
-		        transform: none !important;
 		    }
 		    
-		    /* Then add our custom hover */
-		    nav.modern-nav ul.container li a.nav-link:hover,
-		    body nav#nav ul.container li a.nav-link:hover {
-		        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-		        color: white !important;
-		        text-decoration: none !important;
-		        transform: none !important;
-		        box-shadow: none !important;
-		        border: none !important;
+		    /* Simple underline hover effect */
+		    #nav a:hover {
+		        color: #00b4d8 !important;
+		        border-bottom: 2px solid #00b4d8 !important;
 		    }
-
-			/* Header styling */
-			article#top.wrapper.style1 {
-			    background: linear-gradient(135deg, #0077B5 0%, #00A0DC 100%) !important;
-			}
-			
-			/* Footer styling */
-			article#contact.wrapper.style4 {
-			    background: linear-gradient(135deg, #0077B5 0%, #00A0DC 100%) !important;
-			}
-			
-			/* Make sure text stays readable */
-			article#top h1,
-			article#top p,
-			article#contact h3,
-			article#contact p {
-			    color: white !important;
-			}
-
+		    
+		    /* Header styling */
+		    article#top.wrapper.style1 {
+		        background: linear-gradient(135deg, #0077B5 0%, #00A0DC 100%) !important;
+		    }
+		    
+		    /* Footer styling */
+		    article#contact.wrapper.style4 {
+		        background: linear-gradient(135deg, #0077B5 0%, #00A0DC 100%) !important;
+		    }
+		    
+		    /* Make sure text stays readable */
+		    article#top h1,
+		    article#top p,
+		    article#contact h3,
+		    article#contact p {
+		        color: white !important;
+		    }
 		</style>
 	</head>
 	<body class="is-preload">
@@ -269,6 +262,7 @@
 
 	</body>
 </html>
+
 
 
 
