@@ -234,6 +234,39 @@
 			    max-width: 100% !important;
 			    width: 100% !important;
 			}
+
+			/* Equal height cards */
+			#portfolio .row > [class*="col-"],
+			#economics .row > [class*="col-"] {
+			    display: flex !important;
+			}
+			
+			#portfolio .box.style2,
+			#economics .box.style2 {
+			    display: flex !important;
+			    flex-direction: column !important;
+			    height: 100% !important;
+			    min-height: 500px !important;
+			}
+			
+			#portfolio .box.style2 h3,
+			#economics .box.style2 h3 {
+			    min-height: 60px !important;
+			    display: flex !important;
+			    align-items: center !important;
+			    justify-content: center !important;
+			}
+			
+			#portfolio .box.style2 p,
+			#economics .box.style2 p {
+			    flex-grow: 1 !important;
+			}
+			
+			/* Keep button at bottom */
+			#portfolio .box.style2 .button,
+			#economics .box.style2 .button {
+			    margin-top: auto !important;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -450,6 +483,7 @@
 
 	</body>
 </html>
+
 
 
 
