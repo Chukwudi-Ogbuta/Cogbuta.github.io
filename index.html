@@ -11,11 +11,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-		    a.nav-link:hover {
+		    /* Remove ALL existing hover effects first */
+		    nav#nav ul.container li a:hover {
+		        background: none !important;
+		        box-shadow: none !important;
+		        transform: none !important;
+		    }
+		    
+		    /* Then add our custom hover */
+		    nav.modern-nav ul.container li a.nav-link:hover,
+		    body nav#nav ul.container li a.nav-link:hover {
 		        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+		        color: white !important;
+		        text-decoration: none !important;
 		        transform: none !important;
 		        box-shadow: none !important;
-		        color: white !important;
+		        border: none !important;
 		    }
 		</style>
 	</head>
@@ -241,6 +252,7 @@
 
 	</body>
 </html>
+
 
 
 
