@@ -307,6 +307,31 @@
 			    font-size: 0.9em;
 			    padding: 8px 16px;
 			}
+
+			/* =========================
+			   CERTIFICATIONS INTERACTION
+			   ========================= */
+			
+			#portfolio ~ .row .image.featured {
+			    overflow: hidden;
+			    border-radius: 8px;
+			    cursor: zoom-in;
+			    transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
+			
+			#portfolio ~ .row .image.featured img {
+			    transition: transform 0.4s ease;
+			}
+			
+			#portfolio ~ .row .image.featured:hover img {
+			    transform: scale(1.1);
+			}
+			
+			#portfolio ~ .row .image.featured:hover {
+			    transform: translateY(-6px);
+			    box-shadow: 0 18px 35px rgba(0,0,0,0.15);
+			}
+
 		</style>
 	</head>
 	<body class="is-preload">
@@ -535,6 +560,7 @@
 
 	</body>
 </html>
+
 
 
 
