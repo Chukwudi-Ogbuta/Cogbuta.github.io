@@ -175,67 +175,44 @@
 			    padding: 0 5px !important;
 			}
 
-			/* Equal height columns */
+			/* Force equal height cards - SIMPLE */
 			#portfolio .row,
 			#economics .row {
-			    display: flex !important;
-			    flex-wrap: wrap !important;
+			    display: flex;
+			    align-items: stretch;
 			}
 			
-			#portfolio .row > [class*="col-"],
-			#economics .row > [class*="col-"] {
-			    display: flex !important;
+			#portfolio .row > div,
+			#economics .row > div {
+			    display: flex;
 			}
 			
-			/* Equal height cards with proper layout */
 			#portfolio .box.style2,
 			#economics .box.style2 {
-			    display: flex !important;
-			    flex-direction: column !important;
-			    height: 100% !important;
-			    padding: 0 !important;
-			    background: white !important;
+			    width: 100%;
+			    display: flex;
+			    flex-direction: column;
 			}
 			
-			/* Image container - fixed height at top */
+			/* Fixed height images */
 			#portfolio .image.featured,
 			#economics .image.featured {
-			    height: 200px !important;
-			    width: 100% !important;
-			    overflow: hidden !important;
-			    margin: 0 !important;
-			    padding: 0 !important;
-			    flex-shrink: 0 !important;
-			    display: block !important;
-			    background: white !important;
+			    height: 180px;
+			    overflow: hidden;
+			    margin-bottom: 15px;
 			}
 			
 			#portfolio .image.featured img,
 			#economics .image.featured img {
-			    width: 100% !important;
-			    height: 200px !important;
-			    object-fit: cover !important;
-			    object-position: center !important;
-			    display: block !important;
+			    width: 100%;
+			    height: 180px;
+			    object-fit: cover;
 			}
 			
-			/* Content spacing */
-			#portfolio .box.style2 h3,
-			#economics .box.style2 h3 {
-			    padding: 15px 20px 10px 20px !important;
-			    margin: 0 !important;
-			}
-			
+			/* Push content to fill space */
 			#portfolio .box.style2 p,
 			#economics .box.style2 p {
-			    padding: 0 20px !important;
-			    margin: 0 0 15px 0 !important;
-			    flex-grow: 1 !important;
-			}
-			
-			#portfolio .box.style2 .button,
-			#economics .box.style2 .button {
-			    margin: 0 20px 20px 20px !important;
+			    flex: 1;
 			}
 		</style>
 	</head>
@@ -453,6 +430,7 @@
 
 	</body>
 </html>
+
 
 
 
