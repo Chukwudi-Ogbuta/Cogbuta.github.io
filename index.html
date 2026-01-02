@@ -242,6 +242,60 @@
 		    #economics .box.style2 .button {
 		        margin: 0 20px 20px 20px !important;
 		    }
+
+			/* Force proper order - image first, then content */
+			#portfolio .box.style2,
+			#economics .box.style2 {
+			    width: 100% !important;
+			    display: flex !important;
+			    flex-direction: column !important;
+			    padding: 0 !important;
+			    overflow: hidden !important;
+			}
+			
+			/* Image container - MUST be first */
+			#portfolio .box.style2 > a.image.featured,
+			#economics .box.style2 > a.image.featured {
+			    height: 200px !important;
+			    width: 100% !important;
+			    overflow: hidden !important;
+			    margin: 0 !important;
+			    padding: 0 !important;
+			    display: block !important;
+			    flex-shrink: 0 !important;
+			    order: 1 !important;
+			}
+			
+			#portfolio .box.style2 > a.image.featured img,
+			#economics .box.style2 > a.image.featured img {
+			    width: 100% !important;
+			    height: 200px !important;
+			    object-fit: cover !important;
+			    display: block !important;
+			}
+			
+			/* Title comes after image */
+			#portfolio .box.style2 > h3,
+			#economics .box.style2 > h3 {
+			    padding: 15px 20px 10px 20px !important;
+			    margin: 0 !important;
+			    order: 2 !important;
+			}
+			
+			/* Description after title */
+			#portfolio .box.style2 > p,
+			#economics .box.style2 > p {
+			    padding: 0 20px 20px 20px !important;
+			    margin: 0 !important;
+			    flex: 1 !important;
+			    order: 3 !important;
+			}
+			
+			/* Button last (economics only) */
+			#economics .box.style2 > .button {
+			    margin: 0 20px 20px 20px !important;
+			    order: 4 !important;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -458,6 +512,7 @@
 
 	</body>
 </html>
+
 
 
 
