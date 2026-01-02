@@ -200,6 +200,20 @@
 			    display: flex;
 			    flex-direction: column;
 			}
+
+			/* Remove background containers from images */
+			#portfolio .image.featured,
+			#economics .image.featured {
+			    background: transparent !important;
+			    border: none !important;
+			    box-shadow: none !important;
+			}
+			
+			/* Also remove any row backgrounds */
+			#portfolio .row,
+			#economics .row {
+			    background: transparent !important;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -416,6 +430,7 @@
 
 	</body>
 </html>
+
 
 
 
