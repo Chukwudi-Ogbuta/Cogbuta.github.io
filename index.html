@@ -381,6 +381,45 @@
 			    font-weight: 600 !important;
 			}
 
+			/* Mobile fixes */
+			@media screen and (max-width: 768px) {
+			    /* Fix navbar overlap */
+			    #nav {
+			        position: relative !important;
+			        margin-bottom: 20px !important;
+			    }
+			    
+			    /* Stack nav items better on mobile */
+			    #nav ul.container li {
+			        display: inline-block !important;
+			        padding: 8px 10px !important;
+			    }
+			    
+			    /* Reduce profile image size on mobile */
+			    article#top .image {
+			        width: 200px !important;
+			        height: 200px !important;
+			        margin: 0 auto 20px !important;
+			    }
+			    
+			    /* Better text sizing on mobile */
+			    article#top h1 {
+			        font-size: 2em !important;
+			    }
+			    
+			    article#top p {
+			        font-size: 1em !important;
+			        padding: 0 20px !important;
+			    }
+			    
+			    /* Stack buttons vertically on mobile */
+			    article#top .button {
+			        display: block !important;
+			        width: 80% !important;
+			        margin: 10px auto !important;
+			    }
+			}
+
 		</style>
 	</head>
 	<body class="is-preload">
@@ -610,6 +649,7 @@
 
 	</body>
 </html>
+
 
 
 
