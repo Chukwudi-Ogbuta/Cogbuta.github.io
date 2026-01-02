@@ -40,6 +40,37 @@
 		    article#contact p {
 		        color: white !important;
 		    }
+
+			/* Skills Pills Styling */
+			.pill {
+			    display: inline-block;
+			    padding: 10px 20px;
+			    margin: 5px;
+			    border-radius: 25px;
+			    font-size: 0.95em;
+			    font-weight: 500;
+			    transition: transform 0.2s;
+			    cursor: default;
+			}
+			
+			.pill:hover {
+			    transform: scale(1.05);
+			}
+			
+			.pill-programming {
+			    background: #4CAF50;
+			    color: white;
+			}
+			
+			.pill-database {
+			    background: #2196F3;
+			    color: white;
+			}
+			
+			.pill-engineering {
+			    background: #FF6B6B;
+			    color: white;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -76,48 +107,45 @@
 
 		<!-- Work -->
 			<article id="work" class="wrapper style2">
-				<div class="container">
-					<header>
-						<h2>Here's all the stuff I do.</h2>
-					</header>
-				</header>
-			</header>
-			<div class="row aln-center">
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style2">
-						<span class="icon featured" style="font-size: 3em; color: #4CAF50;"><i class="fab fa-python"></i></span>
-						<h3 style="color: #4CAF50;">Programming</h3>
-						<ul>
-							<li>Python Programming</li>
-							<li>SAS Programming</li>
-							<li>R Programming</li>
-						</ul>
-					</section>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style2">
-						<span class="icon featured" style="font-size: 3em; color: #2196F3;"><i class="fas fa-database"></i></span>
-						<h3 style="color: #2196F3;">Databases</h3>
-						<ul>
-							<li>SQL and Relational Databases (MySQL, PostgreSQL, SQL Server.)</li>
-							<li>NoSQL Databases (Cassandra DB, MongoDB, CouchDB)</li>
-						</ul>
-					</section>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style2">
-						<span class="icon featured" style="font-size: 3em; color: #FF5722;"><i class="fab fa-connectdevelop"></i></span>
-						<h3 style="color: #FF5722;">Data Engineering</h3>
-						<ul>
-							<li>Apache Airflow</li>
-							<li>Apache Spark</li>
-							<li>ETL/ELT Data Pipeline</li>
-							<li>Apache Kafka</li>
-							<li>AWS (QuickSight, Glue, RDS, S3 Bucket, etc.)</li>
-						</ul>
-					</section>
-				</div>
-				<!-- Repeat the above structure for other skill categories -->
+			    <div class="container">
+			        <header>
+			            <h2>Here's all the stuff I do.</h2>
+			        </header>
+			        
+			        <div class="skills-pills" style="max-width: 1000px; margin: 30px auto 0;">
+			            <!-- Programming -->
+			            <div style="margin-bottom: 25px;">
+			                <span style="font-weight: bold; color: #0077B5; margin-bottom: 10px; font-size: 1.1em; display: block;">Programming</span>
+			                <span class="pill pill-programming">Python</span>
+			                <span class="pill pill-programming">SAS</span>
+			                <span class="pill pill-programming">R</span>
+			            </div>
+			            
+			            <!-- Databases -->
+			            <div style="margin-bottom: 25px;">
+			                <span style="font-weight: bold; color: #0077B5; margin-bottom: 10px; font-size: 1.1em; display: block;">Databases</span>
+			                <span class="pill pill-database">MySQL</span>
+			                <span class="pill pill-database">PostgreSQL</span>
+			                <span class="pill pill-database">SQL Server</span>
+			                <span class="pill pill-database">Cassandra DB</span>
+			                <span class="pill pill-database">MongoDB</span>
+			                <span class="pill pill-database">CouchDB</span>
+			            </div>
+			            
+			            <!-- Data Engineering -->
+			            <div style="margin-bottom: 25px;">
+			                <span style="font-weight: bold; color: #0077B5; margin-bottom: 10px; font-size: 1.1em; display: block;">Data Engineering</span>
+			                <span class="pill pill-engineering">Apache Airflow</span>
+			                <span class="pill pill-engineering">Apache Spark</span>
+			                <span class="pill pill-engineering">ETL/ELT Pipelines</span>
+			                <span class="pill pill-engineering">Apache Kafka</span>
+			                <span class="pill pill-engineering">AWS QuickSight</span>
+			                <span class="pill pill-engineering">AWS Glue</span>
+			                <span class="pill pill-engineering">AWS RDS</span>
+			                <span class="pill pill-engineering">AWS S3</span>
+			            </div>
+			        </div>
+			    </div>
 			</article>
 
 <!-- Portfolio -->
@@ -262,6 +290,7 @@
 
 	</body>
 </html>
+
 
 
 
