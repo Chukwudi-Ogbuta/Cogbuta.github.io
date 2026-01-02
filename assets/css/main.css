@@ -2078,8 +2078,9 @@ input, select, textarea {
 		}
 
 			#nav a:hover {
-				color: #fff !important;
-				background: #383838;
+			    background-color: transparent !important;
+			    color: #00b4d8 !important; /* Light blue to match your header */
+			    border-bottom: 2px solid #00b4d8;
 			}
 
 			#nav a.active {
