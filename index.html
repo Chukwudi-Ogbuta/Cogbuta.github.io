@@ -175,44 +175,62 @@
 			    padding: 0 5px !important;
 			}
 
-			/* Perfect image fit at top of cards */
+			/* Equal height columns */
+			#portfolio .row,
+			#economics .row {
+			    display: flex !important;
+			    flex-wrap: wrap !important;
+			}
+			
+			#portfolio .row > [class*="col-"],
+			#economics .row > [class*="col-"] {
+			    display: flex !important;
+			}
+			
+			/* Equal height cards with proper layout */
+			#portfolio .box.style2,
+			#economics .box.style2 {
+			    display: flex !important;
+			    flex-direction: column !important;
+			    height: 100% !important;
+			    padding: 0 !important;
+			    background: white !important;
+			}
+			
+			/* Image container - fixed height at top */
 			#portfolio .image.featured,
 			#economics .image.featured {
-			    height: 200px !important;
+			    height: 220px !important;
 			    width: 100% !important;
 			    overflow: hidden !important;
-			    display: block !important;
-			    background: #f9f9f9 !important;
-			    margin: 0 0 15px 0 !important;
+			    margin: 0 !important;
 			    padding: 0 !important;
+			    flex-shrink: 0 !important;
+			    display: flex !important;
+			    align-items: center !important;
+			    justify-content: center !important;
+			    background: #f5f5f5 !important;
 			}
 			
 			#portfolio .image.featured img,
 			#economics .image.featured img {
 			    width: 100% !important;
 			    height: 100% !important;
-			    object-fit: cover !important;
-			    display: block !important;
+			    object-fit: contain !important;
 			}
 			
-			/* Card layout */
-			#portfolio .box.style2,
-			#economics .box.style2 {
-			    display: flex !important;
-			    flex-direction: column !important;
-			    padding: 0 !important;
-			}
-			
+			/* Content spacing */
 			#portfolio .box.style2 h3,
 			#economics .box.style2 h3 {
-			    padding: 0 20px !important;
-			    margin: 10px 0 !important;
+			    padding: 15px 20px 10px 20px !important;
+			    margin: 0 !important;
 			}
 			
 			#portfolio .box.style2 p,
 			#economics .box.style2 p {
 			    padding: 0 20px !important;
 			    margin: 0 0 15px 0 !important;
+			    flex-grow: 1 !important;
 			}
 			
 			#portfolio .box.style2 .button,
@@ -435,6 +453,7 @@
 
 	</body>
 </html>
+
 
 
 
