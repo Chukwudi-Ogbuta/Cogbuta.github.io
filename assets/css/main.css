@@ -2443,3 +2443,57 @@ input, select, textarea {
 					}
 
 	}
+/* ===== CUSTOM MODERN BUTTON STYLING ===== */
+.button {
+    display: inline-block;
+    padding: 14px 32px;
+    margin: 10px 12px 10px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    color: white !important;
+}
+
+/* LinkedIn Button */
+.button.linkedin {
+    background: linear-gradient(135deg, #0077B5 0%, #00A0DC 100%);
+}
+
+.button.linkedin:hover {
+    box-shadow: 0 8px 25px rgba(0, 119, 181, 0.4);
+    background: linear-gradient(135deg, #00A0DC 0%, #0077B5 100%);
+}
+
+/* Data Engineering Projects Button */
+.button.projects {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.button.projects:hover {
+    box-shadow: 0 8px 25px rgba(17, 153, 142, 0.4);
+    background: linear-gradient(135deg, #38ef7d 0%, #11998e 100%);
+}
+
+/* Economics Projects Button */
+.button.economics {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.button.economics:hover {
+    box-shadow: 0 8px 25px rgba(245, 87, 108, 0.4);
+    background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+}
