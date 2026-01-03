@@ -608,6 +608,57 @@
 			    }
 			}
 
+			/* =========================
+			   CERTIFICATIONS – SCROLL + ZOOM
+			   ========================= */
+			
+			.cert-scroll {
+			    display: flex;
+			    gap: 20px;
+			    overflow-x: auto;
+			    padding: 20px 5px;
+			    scroll-snap-type: x mandatory;
+			}
+			
+			.cert-scroll::-webkit-scrollbar {
+			    height: 8px;
+			}
+			
+			.cert-scroll::-webkit-scrollbar-thumb {
+			    background: #ccc;
+			    border-radius: 4px;
+			}
+			
+			/* Certification card */
+			.cert-card {
+			    flex: 0 0 280px;
+			    background: #fff;
+			    border-radius: 10px;
+			    padding: 12px;
+			    scroll-snap-align: center;
+			    cursor: zoom-in;
+			
+			    transition: transform 0.35s ease, box-shadow 0.35s ease;
+			}
+			
+			.cert-card img {
+			    width: 100%;
+			    height: auto;
+			    display: block;
+			    transition: transform 0.4s ease;
+			}
+			
+			/* Hover zoom */
+			.cert-card:hover {
+			    transform: translateY(-6px);
+			    box-shadow: 0 18px 35px rgba(0,0,0,0.15);
+			}
+			
+			.cert-card:hover img {
+			    transform: scale(1.1);
+			}
+
+
 			
 		</style>
 	</head>
@@ -784,15 +835,16 @@
 		        <h2><strong>My Certifications</strong></h2>
 		    </div>
 		</div>
-		<div class="row">
-		    <div class="col-4 col-6-medium col-12-small">
-		        <a class="image featured"><img src="images/ibmde.jpg" alt="IBM Data Engineering" /></a>
+		
+		<div class="cert-scroll">
+		    <div class="cert-card">
+		        <img src="images/ibmde.jpg" alt="IBM Data Engineering" />
 		    </div>
-		    <div class="col-4 col-6-medium col-12-small">
-		        <a class="image featured"><img src="images/ibmda.jpg" alt="IBM Data Analytics" /></a>
+		    <div class="cert-card">
+		        <img src="images/ibmda.jpg" alt="IBM Data Analytics" />
 		    </div>
-		    <div class="col-4 col-6-medium col-12-small">
-		        <a class="image featured"><img src="images/google.jpg" alt="Google Data Analytics" /></a>
+		    <div class="cert-card">
+		        <img src="images/google.jpg" alt="Google Data Analytics" />
 		    </div>
 		</div>
         </div>
@@ -877,6 +929,7 @@
 
 	</body>
 </html>
+
 
 
 
